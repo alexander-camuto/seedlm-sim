@@ -319,7 +319,7 @@ def find_optimal_projection(weight: torch.Tensor, K: int = 8, P: int = 4, bits: 
         U_j = lfsr.generate_matrix((C, P))
         
         # Project weight vector onto the matrix
-        t_j = torch.matmul(U_j.T, w)  # This is t_j = U(s_j)^T * w
+        t_j = torch.matmul(torch.linalg.pinv(U_j), w)  # This is t_j = U(s_j)^† * w
         
         # Quantize t_j
         quantized_t_j, exponent_j = quantize_vector(t_j, bits=bits)
