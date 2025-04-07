@@ -6,7 +6,9 @@ Rather than using hardware LFSR registers, we simulate them in software to attem
 
 It provides a simple, modular approach for compressing PyTorch models using Linear Feedback Shift Register (LFSR) techniques.
 
-I am merely reproducing this research -- all credits due to original authors ! 
+I am merely reproducing this research -- all credits due to original authors !
+
+All creds to Claude for code comments and docstrings :). Code is written by me.
 
 ## Installation
 
