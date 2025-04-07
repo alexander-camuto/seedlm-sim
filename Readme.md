@@ -1,10 +1,12 @@
-# SeedLM: LFSR-Based Weight Compression for PyTorch
+# SeedLM: LFSR-Based Weight Compression simulation using PyTorch
 
 This repository implements the LFSR-based neural network weight compression technique as described in ["SeedLM: LFSR-Based Weight Compression for Large Language Models"](https://arxiv.org/pdf/2410.10714).
 
 Rather than using hardware LFSR registers, we simulate them in software to attempt to reproduce the exact behavior described in the original research.
 
 It provides a simple, modular approach for compressing PyTorch models using Linear Feedback Shift Register (LFSR) techniques.
+
+I am merely reproducing this research -- all credits due to original authors ! 
 
 ## Installation
 
